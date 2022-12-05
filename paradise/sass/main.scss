@@ -1,8 +1,6 @@
-:root {
-  --light-p: #48cae4;
-  --medium-p: #00b4d8;
-  --dark-p: #0096c7;
-}
+$color-light: #48cae4;
+$color-medium: #00b4d8;
+$color-dark: #0096c7;
 
 *,
 ::after,
@@ -26,7 +24,11 @@ body {
 .header {
   position: relative;
   height: 95vh;
-  background: linear-gradient(to right, #00b4d8cc, #48cae4cc),
+  background: linear-gradient(
+      to right,
+      rgba($color-light, 0.5),
+      rgba($color-medium, 0.6)
+    ),
     url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
